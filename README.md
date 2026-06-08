@@ -1,11 +1,16 @@
 # E-Commerce Customer Value & Behavior Analytics (RFM, LTV & Hypothesis Testing)
 
-## Project Overview
+# English Version
+...
+# Russian Version
+---
+# English Version
+## 📌 Project Overview
 This project focuses on comprehensive Exploratory Data Analysis (EDA) and cohort analysis of transactional data from a major e-commerce retailer. It includes an automated ETL pipeline, customer segmentation using the RFM (Recency, Frequency, Monetary) method, statistical hypothesis testing, and an interactive Streamlit dashboard for business analytics.
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 - `data/raw` — raw transactional dataset (Kaggle Online Retail Dataset)
 - `data/processed` — cleaned dataset ready for analysis
 - `src/pipeline.py` — ETL data preprocessing script
@@ -15,7 +20,7 @@ This project focuses on comprehensive Exploratory Data Analysis (EDA) and cohort
 
 ---
 
-## Tech Stack
+## ⚙️ Tech Stack
 - **Python** (`Pandas`, `NumPy`, `SciPy`) — data processing and statistics
 - **Matplotlib**, **Seaborn** — data visualization
 - **Streamlit** — interactive dashboard
@@ -45,9 +50,13 @@ Customers were grouped into:
 ### 3. Statistical Hypothesis Testing
 - **Method:** Welch’s t-test (`SciPy`)
 - **Comparison:** `Loyal Customers` vs `At Risk`
-- **Result:** p-value = $3.4475 \times 10^{-6}$
+- **Result:** p-value ≈ 0.0000034475
 - **Conclusion:** statistically significant difference in spending behavior
-
+  
+## 🔑 Key Insights
+- A small group of customers generates majority of revenue
+- At Risk customers still have high historical value
+- Recency is the strongest indicator of churn
 ---
 
 ### 4. Interactive Dashboard
@@ -66,18 +75,15 @@ pip install -r requirements.txt
 python src/pipeline.py
 streamlit run dashboard/app.py
 ```
+  
+# (Russian Version)
 
-### (Russian Version)
-
-
-# E-Commerce Customer Value & Behavior Analytics (RFM, LTV & Hypothesis Testing)
-
-## Описание проекта
+## 📌 Описание проекта
 Проект посвящён анализу данных e-commerce, включая комплексный EDA, автоматический пайплайн предобработки сырых транзакций, RFM-сегментацию клиентов, проверку статистических гипотез и развёртывание интерактивного дашборда на Streamlit для мониторинга бизнес-метрик.
 
 ---
 
-## Структура проекта
+## 📁 Структура проекта
 - `data/raw` — исходные транзакционные данные Kaggle
 - `data/processed` — очищенные и готовые к анализу данные
 - `src/pipeline.py` — скрипт автоматической очистки данных (ETL)
@@ -87,7 +93,7 @@ streamlit run dashboard/app.py
 
 ---
 
-## Технологии
+## ⚙️ Технологии
 - **Python** (`Pandas`, `NumPy`, `SciPy`) — предобработка данных и математическая статистика
 - **Matplotlib**, **Seaborn** — визуализация данных и графиков
 - **Streamlit** — интерактивный веб-интерфейс
@@ -117,7 +123,7 @@ streamlit run dashboard/app.py
 ### 3. Проверка гипотез
 - **Тест:** двухвыборочный Т-критерий Уэлча (`SciPy`)
 - **Группы:** `Loyal Customers` vs `At Risk`
-- **p-value:** $3.4475 \times 10^{-6}$ (значительно ниже $\alpha = 0.05$)
+- **p-value:** p-value ≈ 0.0000034475 (значительно ниже $\alpha = 0.05$)
 - **Вывод:** различие в средних чеках статистически значимо и обусловлено поведенческими факторами
 
 ---
@@ -138,6 +144,3 @@ pip install -r requirements.txt
 python src/pipeline.py
 streamlit run dashboard/app.py
 ```
-pip install -r requirements.txt
-python src/pipeline.py
-streamlit run dashboard/app.py
