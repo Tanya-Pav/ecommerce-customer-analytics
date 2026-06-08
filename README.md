@@ -1,8 +1,6 @@
 # E-Commerce Customer Value & Behavior Analytics (RFM, LTV & Hypothesis Testing)
 
-# English Version
-...
-# Russian Version
+Language / Язык: [English](#english-version) | [Русский](#russian-version)
 ---
 # English Version
 ## 📌 Project Overview
