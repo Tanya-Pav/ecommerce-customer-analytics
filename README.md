@@ -62,6 +62,7 @@ Customers were grouped into:
 - KPI metrics (total customers, frequency, recency, monetary value)
 - Visual analysis (Monetary vs Frequency relationships)
 
+![Dashboard Preview](assets/dashboard.png)
 ---
 
 ## Local Setup
