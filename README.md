@@ -154,9 +154,6 @@ The control panel developed in `dashboard/app.py` enables users to:
 ```bash
    streamlit run dashboard/app.py
 
-```
-
-```
 
 ```
 
